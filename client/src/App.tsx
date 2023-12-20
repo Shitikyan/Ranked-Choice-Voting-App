@@ -3,11 +3,11 @@ import { useSnapshot } from 'valtio';
 import { devtools } from 'valtio/utils';
 import Loader from './components/ui/Loader';
 import SnackBar from './components/ui/SnackBar';
-
-import './index.css';
 import Pages from './Pages';
 import { actions, state } from './state';
 import { getTokenPayload } from './util';
+
+import './index.css';
 
 devtools(state, { name: 'app state' });
 const App: React.FC = () => {
